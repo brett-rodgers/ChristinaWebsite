@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Read My Blog</title>
+  <script src="https://kit.fontawesome.com/235bfa5e72.js" crossorigin="anonymous">
+  </script>
+</head>
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="container">
+        <div class="container-title"><span class="text-primary            company-title"><img class="img-1"
+        src="img/home/logolotus7.png" alt=""></img>Christina Ramirez </span><span class="company-title-2">
+        MFT</span>
+        </div>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="indexhtml#about">About</a></li>
+          <li><a href="indexhtml#modalities">Modalities</a></li>
+          <li><a href="indexhtml#locations">Locations</a></li>
+          <li><a href="indexhtml#blog">Blog</a></li>
+          <li><a href="indexhtml#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <h1 class="quote text-light btn btn-outline">Blog</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="post">
+        <h2>Blog Post One</h2>
+        <p class="meta">
+            <i class="fas fa-user"> </i>  Posted by <strong> Wendy Writer </strong> | April 23 2020
+        </p>
+        <img src="img/home/blog2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi, iusto quaerat ipsum fugiat deserunt consectetur, saepe voluptatum sint culpa vero incidunt magnam quas. Magni veritatis pariatur deleniti rerum ratione dolorem, officiis ipsum voluptate deserunt cupiditate mollitia consectetur laudantium amet nemo voluptatum eos doloremque reiciendis odit natus facere tempore. Assumenda?</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt illo deleniti incidunt nisi distinctio, illum porro quod ipsa. Dolorum repudiandae atque neque facere quia. Tempora aliquid inventore modi exercitationem ducimus? Voluptatem laboriosam iusto delectus eveniet numquam itaque, nisi, culpa quidem sit, dolor alias earum exercitationem incidunt ipsum vitae ratione odit sunt mollitia in perferendis voluptatibus. Officiis sapiente ad quo?d</p>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="a"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="a"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="a"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020- Christina Ramirez MFT PLLC</p>
+  </footer>
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(0px)';
+        }
+        setTimout(function () {
+          navbar.style.transform = 'translateY(0px)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }; 
+  </script>
+</body>
+</html>
